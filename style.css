@@ -29,6 +29,17 @@ h1, h2, h3
     width: 100%;
 }
 
+.black_bg
+{
+    background: black;
+}
+
+.scrolltop
+{
+    display: block;
+    margin: auto;
+}
+
 /***********HEADER*******************/
 
 h1 
@@ -712,7 +723,7 @@ footer
 
 .home_footer
 {
-    margin-top: -10px;
+    margin-top: ;
 }
 
 footer > p
