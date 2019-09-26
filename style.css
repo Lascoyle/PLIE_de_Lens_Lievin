@@ -695,6 +695,11 @@ th, td
     background: rgba(255,213,108,1);
 }
 
+table
+{
+    margin-bottom: 5%;
+}
+
 /*Elaboration du footer*/
 
 footer
