@@ -109,6 +109,7 @@ h1
     padding-top: 2vh;
 }
 
+
 /***************menu*******************/
 .menu
 {
@@ -206,6 +207,14 @@ transition-duration: 0.4s;
 {
     color: white;
     font-weight: bold;
+    margin-right: 2.5vw;
+    transition-property: color;
+    transition-duration: 0.4s;    
+}
+
+.question:hover
+{
+    color: rgba(0, 0, 0, 0.541);
 }
 
 /*************texte**********/
@@ -245,7 +254,16 @@ footer
     background-color: white;
 }
 
+footer a 
+{
+    color: white;
+}
 
+footer a:hover
+{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.541);
+}
 
 .car 
 {
@@ -346,10 +364,11 @@ section
 
 /*Définition générale des titres*/
 
-h1
+.presentation__title
 {
     color: white;
     margin-bottom: 20px;    
+    font-size: 4vw;
 }
 
 h2, h3
@@ -365,9 +384,13 @@ h2
 
 h3
 {
-    font-size: 3em;
     background: linear-gradient(90deg, rgba(145,220,228,1) 0%, rgba(201,247,252,1) 23%, rgba(255,255,255,1) 100%);    padding: 10px;
     padding: 2%;
+}
+
+.accueil-h3
+{
+    font-size : 3rem;
 }
 
 .definition__title
@@ -443,7 +466,6 @@ p
     margin-bottom: 20px; 
     margin-left: 12.5vw;
     line-height: 5vh;
-    color: white;
     font-weight: bold;
 } 
 
@@ -537,12 +559,12 @@ p
 
 .iae__concept p
 {
-    background-color: rgba(158, 158, 158, 0.192);
+    background-color: rgba(66, 66, 66, 0.431);
     width: 100%;
     margin-right: 0vw;
     padding: 1%;
     font-size: 1.2em;
-    text-align: right; 
+    text-align: left; 
     padding: 2%;
 }
 
@@ -555,7 +577,7 @@ p
 
 .people__target p
 {
-    background-color: rgba(158, 158, 158, 0.192);
+    background-color:rgba(66, 66, 66, 0.431);
     width: 100%;
     margin-left: 0vw;
     padding: 1%;
@@ -580,7 +602,6 @@ p
     font-weight: bold;
     font-size: 2.5rem;
     margin-top: 5vh;
-    margin-right: 5vh;
     padding: 2%;
     color: white;
 }
@@ -614,7 +635,7 @@ p
     background: linear-gradient(90deg, rgba(255,157,61,1) 0%, rgba(255,213,108,1) 82%, rgba(255,253,253,1) 100%);
 }
 
-/*Positionnement carte des IAE*/
+/*Positionnement carte des SIAE*/
 .localisation__img
 {
     display: block;
@@ -623,7 +644,7 @@ p
     margin-top: 10vh;
 } 
 
-/*Placement de l'article sur la localisation des IAE*/
+/*Placement de l'article sur la localisation des SIAE*/
 .localisation
 {
     margin-top: 20vh;
@@ -644,6 +665,49 @@ p
     margin-left: 50vw;
 }
 
+/*Définition de la liste*/ 
+
+.juri_list
+{
+    font-size: 1.8rem;
+    line-height: 8vh;
+    background: url(img/super-triangle3.png);
+    padding: 3%;
+}
+
+
+.juri p
+{
+    padding: 3%;
+}
+
+.lg_unemployed
+{
+    margin-left: 10vw;
+}
+
+.poor_people
+{
+    margin-left: 18vw;
+
+}
+
+.young_people
+{
+    margin-left: 26vw;
+
+}
+
+.old_people
+{
+    margin-left: 34vw;
+}
+
+.handi_people
+{
+    margin-left: 42vw;
+}
+
 /*Mise en forme du tableau de cadre juridique*/
 table
 {
@@ -652,6 +716,8 @@ table
     font-size: 1.2rem;
     margin-top: 5%;
     font-weight: bold;
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 th, td
@@ -721,37 +787,14 @@ footer
     color: white;
 }
 
-.home_footer
-{
-    margin-top: ;
-}
-
 footer > p
 {
     width: 70vw;
     padding-top: 4vh;
-    border-top: 2px solid white;
     font-weight: bold;
-    font-size: 2.5rem;
+    font-size: 1.7rem;
 }
 
-footer li
-{
-    list-style-type: none;
-    font-weight: bold;
-    border-left: 1px solid white;
-    border-right: 1px solid white;
-    padding: 1.8%;
-}
-
-footer ul
-{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-content: center;
-    flex-wrap: wrap;
-}
 
 
 @media screen and (min-width: 1000px)
@@ -778,8 +821,6 @@ section
 {
     width: 40vw;
 }
-}
-
 
 /*****LES 4 PAGES ANNEXES*****/
 
@@ -878,7 +919,7 @@ section
 .siae dl
 {
     background: rgba(255, 237, 225, 0.637);
-    width: 70vw;
+    width: 75vw;
     margin: 0%;
 }
 
@@ -914,24 +955,32 @@ section
 {
     border-left: 2px solid white; 
     color:rgb(77, 15, 15);
+    margin-right: 3vw;
+    padding: 4%;
 }
 
 .aci_presentation dd
 {
     border-left: 2px solid white;
     color:  rgb(3, 70, 31);
+    margin-right: 3vw;
+    padding: 4%;
 }
 
 .ei_presentation dd
 {
     border-left: 2px solid white;
     color: rgb(49, 0, 53);
+    margin-right: 3vw;
+    padding: 4%;
 }
 
 .etti_presentation dd
 {
     border-left: 2px solid white;
     color:  rgb(87, 52, 17);
+    margin-right: 3vw;
+    padding: 4%;
 }
 
 
@@ -941,8 +990,7 @@ dl
 {
     padding: 5%;
     margin: 2%;
-    font-size: 1.7rem;
-
+    font-size: 1.5rem;
 }
 
 dt
@@ -950,11 +998,42 @@ dt
     font-variant: small-caps;
 }
 
+dd, dt
+{
+    padding-top: 1%;
+}
+
 /*Mise en forme des repertoires*/
 .ai_repertory, .aci_repertory, .ei_repertory, .etti_repertory 
 {
     font-size: 1.2em;
     padding-top: 0%;
+}
+
+.ai_repertory dl
+{
+    width: 75vw;
+    margin: 0px;
+}
+.aci_repertory dl 
+{
+    width: 75vw;
+    margin: 0px;
+}
+.ei_repertory dl
+{
+    width: 75vw;
+    margin: 0px;
+}
+.etti_repertory dl
+{
+    width: 75vw;
+    margin: 0px;
+}
+
+.imago
+{
+    margin: 0px;
 }
 
 
@@ -996,3 +1075,46 @@ dt
 {
     background: rgba(255,157,61,1);
 }
+
+/*Style des liens mail des répertoires*/
+
+.ai_repertory a
+{
+    color: rgba(255,65,65,1);
+}
+
+.aci_repertory a
+{
+    color: rgba(12,190,85,1);
+}
+
+.ei_repertory a
+{
+    color: rgba(182,1,195,1);
+}
+
+.etti_repertory a
+{
+    color: rgba(255,157,61,1);
+}
+
+.ai_repertory a:hover
+{
+    color: rgb(136, 32, 32);
+}
+
+.aci_repertory a:hover
+{
+    color:  rgb(8, 119, 52);
+}
+
+.ei_repertory a:hover
+{
+    color: rgb(94, 7, 100);
+}
+
+.etti_repertory a:hover
+{
+    color:  rgb(144, 89, 33);  
+}
+
